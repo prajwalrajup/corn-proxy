@@ -1,6 +1,5 @@
-import fetch from "node-fetch";
-
 exports.handler = async (event, context) => {
+	import fetch from "node-fetch";
 	var url = event.path;
 	url = url.split(".netlify/functions/cors/")[1];
 	url = decodeURIComponent(url);
